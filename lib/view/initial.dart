@@ -63,7 +63,7 @@ class _InitialState extends State<Initial> {
               {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => const initSecond())
+                  MaterialPageRoute(builder: (context) => InitSecond())
                 );
                 return ;
               }

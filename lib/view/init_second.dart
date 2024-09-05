@@ -1,79 +1,66 @@
+import 'package:co2_tracking/view/signup.dart';
 import 'package:flutter/material.dart';
-import 'package:video_player/video_player.dart';
 
-class initSecond extends StatefulWidget {
-  const initSecond({super.key});
-
-  @override
-  _initSecondState createState() => _initSecondState();
-}
-
-class _initSecondState extends State<initSecond> {
-  late VideoPlayerController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = VideoPlayerController.asset('assets/videos/video_1.mp4')
-      ..initialize().then((_) {
-        setState(() {});
-        _controller.play();
-        _controller.setLooping(true);
-      });
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
+class InitSecond extends StatelessWidget {
+  const InitSecond({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
-      body: Stack(
-        children: [
-          if (_controller.value.isInitialized)
-            SizedBox.expand(
-              child: FittedBox(
-                fit: BoxFit.cover,
-                child: SizedBox(
-                  width: _controller.value.size.width,
-                  height: _controller.value.size.height,
-                  child: VideoPlayer(_controller),
-                ),
-              ),
-            ),
-          GestureDetector(
-            // onTap: () => ,
-            child: const Align(
-              alignment: Alignment.centerRight,
-              child: Icon(
-                Icons.arrow_forward_ios,
-                color: Color(0xFFE8DFCA),
-                size: 50,
-              ),
-            ),
-          ),
-          const Column(
-            mainAxisAlignment: MainAxisAlignment.end,
+      // body: Center(
+      //   child: Column(
+      //     children: [
+      //       Text("Join Roche's\nstrategy\nnow!"),
+            
+      //     ],
+      //   ),
+      // ),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Center(
-                child: Text(
-                  "Specified\nsolution\nfor your day!",
+              const Text(
+                "Join Roche's\nstrategy\nnow!",
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 40),
+              ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Signup())
+                );
+                },
+                icon: Icon(Icons.email), // This icon represents the red arrow in the design
+                label: Text('Signup with company email'),
+              ),
+              SizedBox(height: 20),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => InitSecond())
+                );
+                },
+                child: const Text(
+                  'Login with an existing account',
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 40,
-                    fontFamily: "Domine"
+                    fontSize: 16,
+                    color: Colors.black,
+                    decoration: TextDecoration.underline,
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ),
-              const SizedBox(height: 20),
             ],
           ),
-        ],
+        ),
       ),
     );
   }
