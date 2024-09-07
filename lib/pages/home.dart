@@ -13,34 +13,75 @@ class Home extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Text("My Emission", style: TextStyle(fontSize: 18),),
           StatsV2(inputData: dataList1),
-          Text("Average Emission", style: TextStyle(fontSize: 18),),
-          StatsV2(inputData: dataList2),
           const PropBoxes(),
-
+          SizedBox(height: 10,),
+          Text("Personal Forest", style: TextStyle(fontSize: 18),),
+          SizedBox(height: 10,),
+          Row(
+            children: [
+              Spacer(),
+              Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Color(0xF084ACD4),
+                  borderRadius: BorderRadius.circular(16.0), // Rounded corners
+                ),
+                height: 170,
+                width: MediaQuery.of(context).size.width * 3 / 4,
+                child: Column(
+                  children: [
+                    Text(
+                      "Take a trip to your personal forest\nEvery time you reduce your CO2\nemissions by 21kgs a new tree will be apear in this section!",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black45
+                      ),
+                      ),
+                    Expanded(
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image(
+                            image: AssetImage('assets/images/Tree.png'), // Replace with your image path
+                            width: 200, // Set the desired width
+                            height: 200, // Set the desired height
+                          ),
+                          // ImageIcon(
+                          //   AssetImage('assets/images/Tree.png'),
+                          //   size: 45,
+                          // ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Spacer(),
+            ],
+          ),
+          SizedBox(height: 10,),
           // Third Box: "Actions"
           Text(
             'Actions',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 8), // Spacing before bullet points
-
-          // Bullets with random sentences
           Container(
-            color: Colors.grey[200],
-            // padding: EdgeInsets.all(8),
-            // margin: EdgeInsets.symmetric(vertical: 8),
+            padding: EdgeInsets.only(top: 10),
+            width: double.infinity,
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                BulletPoint(
-                    text:
-                        'EcoCommute'),
-                BulletPoint(text: 'GreenOffice'),
-                BulletPoint(text: 'SmartBites'),
+                CustomButton(label: 'eCommute'),
+                SizedBox(height: 8), // Space between buttons
+                CustomButton(label: 'Green Office'),
+                SizedBox(height: 16),
+                CustomButton(label: 'Smart Bites'),
               ],
             ),
           ),
@@ -68,6 +109,38 @@ class BulletPoint extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class CustomButton extends StatelessWidget {
+  final String label;
+
+  const CustomButton({required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * 3 / 4,
+      child: ElevatedButton(
+        onPressed: () {
+          // Define the action on button press here
+        },
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Color(0xFFF7F6F3),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30.0), // Pill-shaped button
+          ),
+          padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 24.0), // Size of the button
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            fontSize: 18.0,
+            color: Colors.black, // Text color as seen in the image
+          ),
+        ),
+      ),
     );
   }
 }

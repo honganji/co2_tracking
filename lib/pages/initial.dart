@@ -20,7 +20,6 @@ class _InitialState extends State<Initial> {
 
   List<String> myStrings = [
     "Let's work\ntogether\nto reduce\ncarbon emission!",
-    "Specified\nsolution\nfor your day!",
     "Let's\nstart\ndecarborning\nthis planet!"
   ];
   int num = 0;
@@ -59,7 +58,7 @@ class _InitialState extends State<Initial> {
             ),
           GestureDetector(
             onTap: () {
-              if (num == 2)
+              if (num == 1)
               {
                 Navigator.pushReplacement(
                   context,

@@ -1,7 +1,6 @@
 import 'package:co2_tracking/pages/home.dart';
 import 'package:co2_tracking/pages/profile.dart';
 import 'package:co2_tracking/pages/stats.dart';
-import 'package:co2_tracking/pages/stats_v2.dart';
 import 'package:flutter/material.dart';
 
 class Base extends StatefulWidget {
@@ -17,7 +16,6 @@ class _BaseState extends State<Base> {
     const Home(),
     const Profile(),
     const Stats()
-    // const StatsV2()
   ];
 
   // List of Title to transition between
@@ -43,7 +41,7 @@ class _BaseState extends State<Base> {
         children: [
           Container(
             height: 70,
-            padding: EdgeInsets.only(top: 10, left: 20),
+            padding: EdgeInsets.only(top: 20, left: 8),
             width: double.infinity,
             color: Colors.blueGrey,
             child: Text(
@@ -62,7 +60,7 @@ class _BaseState extends State<Base> {
           ),
           child: Container(
             color: Colors.white,
-            height: 50,
+            height: 20,
           ),
         ),
           Expanded(

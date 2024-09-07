@@ -41,12 +41,9 @@ class StatsV2State extends State<StatsV2> {
     }
     return RotatedBox(
       quarterTurns: 3,
-      child: Padding(
-        padding: const EdgeInsets.only(bottom: 11.0),
-        child: SideTitleWidget(
-          axisSide: meta.axisSide,
-          child: Text(text, style: style),
-        ),
+      child: SideTitleWidget(
+        axisSide: meta.axisSide,
+        child: Text(text, style: style),
       ),
     );
   }
@@ -74,7 +71,7 @@ class StatsV2State extends State<StatsV2> {
       child: Column(
         children: [
           AspectRatio(
-            aspectRatio: 1.66,
+            aspectRatio: 2,
             child: LayoutBuilder(
               builder: (context, constraints) {
                 final barsSpace = 12.0 * constraints.maxWidth / 400;
