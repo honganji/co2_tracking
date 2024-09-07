@@ -1,3 +1,4 @@
+import 'package:co2_tracking/view/base.dart';
 import 'package:flutter/material.dart';
 import 'view/initial.dart';
 
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const Initial(),
+      // home: Base(),
     );
   }
 }

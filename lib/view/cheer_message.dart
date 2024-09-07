@@ -27,8 +27,10 @@ class CheerMessage extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => Base()));
+                  Navigator.pushAndRemoveUntil(context,
+                      MaterialPageRoute(builder: (context) => Base()),
+                      (Route<dynamic> route) => false,
+                  );
                 },
                 child: Text('Next'),
               ),

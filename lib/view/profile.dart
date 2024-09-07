@@ -11,25 +11,9 @@ class Profile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             // Profile Picture with notification badge
-            const Stack(
-              children: [
-                CircleAvatar(
-                  radius: 50,
-                  backgroundImage: AssetImage('assets/profile_picture.png'), // You can replace this with your asset
-                ),
-                Positioned(
-                  right: 0,
-                  top: 0,
-                  child: CircleAvatar(
-                    radius: 12,
-                    backgroundColor: Colors.red,
-                    child: Text(
-                      '6',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+            const CircleAvatar(
+              radius: 50,
+              backgroundImage: AssetImage('assets/images/mila.jpg'),
             ),
             const SizedBox(height: 20),
             // Name (Non-editable box)
@@ -37,28 +21,28 @@ class Profile extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text('Name', style: TextStyle(fontSize: 16)),
             ),
-            const _InfoBox(text: 'Not editable'),
+            const _InfoBox(text: 'Mila Soklovacki'),
             const SizedBox(height: 20),
             // Username (Editable box)
             const Align(
               alignment: Alignment.centerLeft,
               child: Text('Username', style: TextStyle(fontSize: 16)),
             ),
-            const _InfoBox(text: 'Enter username'),
+            const _InfoBox(text: 'Milala'),
             const SizedBox(height: 20),
             // Country (Editable box)
             const Align(
               alignment: Alignment.centerLeft,
               child: Text('Country', style: TextStyle(fontSize: 16)),
             ),
-            const _InfoBox(text: 'Enter country'),
+            const _InfoBox(text: 'Serbia'),
             const SizedBox(height: 20),
             // Department (Editable box)
             const Align(
               alignment: Alignment.centerLeft,
               child: Text('Dept.', style: TextStyle(fontSize: 16)),
             ),
-            const _InfoBox(text: 'Enter department'),
+            const _InfoBox(text: 'Human Experiment'),
             const SizedBox(height: 20),
             // Delete Account Button
             ElevatedButton(

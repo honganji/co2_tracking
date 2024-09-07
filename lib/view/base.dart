@@ -1,6 +1,7 @@
 import 'package:co2_tracking/view/home.dart';
 import 'package:co2_tracking/view/profile.dart';
 import 'package:co2_tracking/view/stats.dart';
+import 'package:co2_tracking/view/stats_v2.dart';
 import 'package:flutter/material.dart';
 
 class Base extends StatefulWidget {
@@ -15,7 +16,7 @@ class _BaseState extends State<Base> {
   final List<Widget> _screens = [
     const Home(),
     const Profile(),
-    const Stats()
+    StatsV2()
   ];
 
   // List of Title to transition between
