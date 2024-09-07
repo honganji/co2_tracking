@@ -1,4 +1,4 @@
-import 'package:co2_tracking/view/base.dart';
+import 'package:co2_tracking/pages/base.dart';
 import 'package:flutter/material.dart';
 
 class CheerMessage extends StatelessWidget {

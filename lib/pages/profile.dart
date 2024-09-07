@@ -42,7 +42,7 @@ class Profile extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text('Dept.', style: TextStyle(fontSize: 16)),
             ),
-            const _InfoBox(text: 'Human Experiment'),
+            const _InfoBox(text: 'Human Resources'),
             const SizedBox(height: 20),
             // Delete Account Button
             ElevatedButton(

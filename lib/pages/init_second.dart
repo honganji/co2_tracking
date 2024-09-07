@@ -1,4 +1,4 @@
-import 'package:co2_tracking/view/signup.dart';
+import 'package:co2_tracking/pages/signup.dart';
 import 'package:flutter/material.dart';
 
 class InitSecond extends StatelessWidget {

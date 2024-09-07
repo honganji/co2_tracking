@@ -67,6 +67,13 @@ flutter:
         - asset: assets/fonts/Domine-Regular.ttf
         - asset: assets/fonts/Domine-SemiBold.ttf
           weight: 700
+    - family: Almarai
+      fonts:
+        - asset: assets/fonts/Almarai-Bold.ttf
+        - asset: assets/fonts/Almarai-Light.ttf
+        - asset: assets/fonts/Almarai-Regular.ttf
+        - asset: assets/fonts/Almarai-ExtraBold.ttf
+          weight: 700
   assets:
     - assets/videos/
     - assets/images/

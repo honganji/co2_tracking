@@ -1,0 +1,250 @@
+{
+	"name": "Mannheim",
+	"department": [
+		{
+			"name": "Management",
+			"staff": [
+				{
+					"name": "Ali",
+					"lname": "Idk",
+					"VM": 56.000000,
+					"Mensa": 75.000000,
+					"OfficeSupplies": 45.000000,
+					"Parking": 0.000000,
+					"Travel": 0.000000,
+					"Emails": 56.256901,
+					"Energy": 160.000000
+				},
+				{
+					"name": "Rodrigo",
+					"lname": "Chavez",
+					"VM": 54.000000,
+					"Mensa": 75.000000,
+					"OfficeSupplies": 45.000000,
+					"Parking": 17.000000,
+					"Travel": 0.000000,
+					"Emails": 0.449700,
+					"Energy": 160.000000
+				},
+				{
+					"name": "Mila",
+					"lname": "Chocolatina",
+					"VM": 12.000000,
+					"Mensa": 75.000000,
+					"OfficeSupplies": 143.000000,
+					"Parking": 0.000000,
+					"Travel": 16.000000,
+					"Emails": 0.161400,
+					"Energy": 160.000000
+				},
+				{
+					"name": "Eunsu",
+					"lname": "Ahn",
+					"VM": 179.000000,
+					"Mensa": 125.000000,
+					"OfficeSupplies": 403.000000,
+					"Parking": 85.000000,
+					"Travel": 0.000000,
+					"Emails": 0.570300,
+					"Energy": 160.000000
+				},
+				{
+					"name": "Yuji",
+					"lname": "Toshihiro",
+					"VM": 79.000000,
+					"Mensa": 175.000000,
+					"OfficeSupplies": 75.000000,
+					"Parking": 34.000000,
+					"Travel": 24.000000,
+					"Emails": 3.438900,
+					"Energy": 160.000000
+				},
+				{
+					"name": "Siria",
+					"lname": "Miranda",
+					"VM": 102.000000,
+					"Mensa": 120.000000,
+					"OfficeSupplies": 98.000000,
+					"Parking": 85.000000,
+					"Travel": 3804.000000,
+					"Emails": 0.000000,
+					"Energy": 160.000000
+				}
+			]
+		},
+		{
+			"name": "Marketing",
+			"staff": [
+				{
+					"name": "Andre",
+					"lname": "Mar",
+					"VM": 0.000000,
+					"Mensa": 50.000000,
+					"OfficeSupplies": 34.000000,
+					"Parking": 0.000000,
+					"Travel": 0.000000,
+					"Emails": 0.060600,
+					"Energy": 98.000000
+				},
+				{
+					"name": "David",
+					"lname": "Bayer",
+					"VM": 57.000000,
+					"Mensa": 120.000000,
+					"OfficeSupplies": 65.000000,
+					"Parking": 51.000000,
+					"Travel": 0.000000,
+					"Emails": 0.538200,
+					"Energy": 98.000000
+				},
+				{
+					"name": "Florian",
+					"lname": "Fischer",
+					"VM": 0.000000,
+					"Mensa": 50.000000,
+					"OfficeSupplies": 88.000000,
+					"Parking": 17.000000,
+					"Travel": 0.000000,
+					"Emails": 0.410100,
+					"Energy": 98.000000
+				},
+				{
+					"name": "Ana",
+					"lname": "Primc",
+					"VM": 0.000000,
+					"Mensa": 100.000000,
+					"OfficeSupplies": 45.000000,
+					"Parking": 0.000000,
+					"Travel": 0.000000,
+					"Emails": 0.355200,
+					"Energy": 98.000000
+				}
+			]
+		},
+		{
+			"name": "Manufacturing",
+			"staff": [
+				{
+					"name": "Steven",
+					"lname": "Lan",
+					"VM": 6.000000,
+					"Mensa": 75.000000,
+					"OfficeSupplies": 79.000000,
+					"Parking": 0.000000,
+					"Travel": 0.000000,
+					"Emails": 0.597300,
+					"Energy": 301.000000
+				},
+				{
+					"name": "Yuki",
+					"lname": "Chan",
+					"VM": 77.000000,
+					"Mensa": 75.000000,
+					"OfficeSupplies": 34.000000,
+					"Parking": 17.000000,
+					"Travel": 0.000000,
+					"Emails": 0.516600,
+					"Energy": 301.000000
+				},
+				{
+					"name": "Miyu",
+					"lname": "Miya",
+					"VM": 115.000000,
+					"Mensa": 120.000000,
+					"OfficeSupplies": 76.000000,
+					"Parking": 17.000000,
+					"Travel": 0.000000,
+					"Emails": 0.282900,
+					"Energy": 301.000000
+				},
+				{
+					"name": "Karen",
+					"lname": "Niklitzcheck",
+					"VM": 110.000000,
+					"Mensa": 50.000000,
+					"OfficeSupplies": 45.000000,
+					"Parking": 136.000000,
+					"Travel": 0.000000,
+					"Emails": 0.497700,
+					"Energy": 301.000000
+				},
+				{
+					"name": "Emre",
+					"lname": "Tzar",
+					"VM": 22.000000,
+					"Mensa": 75.000000,
+					"OfficeSupplies": 0.000000,
+					"Parking": 0.000000,
+					"Travel": 0.000000,
+					"Emails": 0.556800,
+					"Energy": 301.000000
+				}
+			]
+		},
+		{
+			"name": "Research",
+			"staff": [
+				{
+					"name": "Tamara",
+					"lname": "Lamprakis",
+					"VM": 12.000000,
+					"Mensa": 120.000000,
+					"OfficeSupplies": 130.000000,
+					"Parking": 0.000000,
+					"Travel": 0.000000,
+					"Emails": 0.392100,
+					"Energy": 267.000000
+				},
+				{
+					"name": "Daniel",
+					"lname": "Gomez",
+					"VM": 12.000000,
+					"Mensa": 50.000000,
+					"OfficeSupplies": 75.000000,
+					"Parking": 0.000000,
+					"Travel": 0.000000,
+					"Emails": 0.245100,
+					"Energy": 267.000000
+				},
+				{
+					"name": "James",
+					"lname": "Dean",
+					"VM": 0.000000,
+					"Mensa": 120.000000,
+					"OfficeSupplies": 121.000000,
+					"Parking": 17.000000,
+					"Travel": 0.000000,
+					"Emails": 0.581400,
+					"Energy": 267.000000
+				},
+				{
+					"name": "Patrick",
+					"lname": "Port",
+					"VM": 0.000000,
+					"Mensa": 50.000000,
+					"OfficeSupplies": 45.000000,
+					"Parking": 0.000000,
+					"Travel": 0.000000,
+					"Emails": 0.180900,
+					"Energy": 267.000000
+				}
+			]
+		},
+		{
+			"name": "HR",
+			"staff": [
+				{
+					"name": "Diana",
+					"lname": "Diaz",
+					"VM": 65.000000,
+					"Mensa": 100.000000,
+					"OfficeSupplies": 2.000000,
+					"Parking": 17.000000,
+					"Travel": 0.000000,
+					"Emails": 0.473400,
+					"Energy": 113.000000
+				}
+			]
+		}
+	]
+}

@@ -1,4 +1,4 @@
-import 'package:co2_tracking/view/init_second.dart';
+import 'package:co2_tracking/pages/init_second.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 

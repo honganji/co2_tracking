@@ -1,4 +1,4 @@
-import 'package:co2_tracking/view/cheer_message.dart';
+import 'package:co2_tracking/pages/cheer_message.dart';
 import 'package:flutter/material.dart';
 
 class Signup extends StatefulWidget {
